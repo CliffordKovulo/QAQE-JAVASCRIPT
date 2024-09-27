@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Events</h1>
+        <div class="filters">
+            <label for="location-filter">Filter by location:</label>
+            <select id="location-filter">
+                <option value="all">All Locations</option>
+                <option value="New York City">New York City</option>
+                <option value="San Francisco">San Francisco</option>
+                <option value="Los Angeles">Los Angeles</option>
+            </select>
+
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="price">Price</option>
+                <option value="date">Date</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <div id="event-list" class="event-list"></div>
+        <div id="product-grid" class="product-grid"></div>
+
+        <!-- Cart section -->
+        <div id="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
